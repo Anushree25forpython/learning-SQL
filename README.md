@@ -1,2 +1,2 @@
-# Data_Minning
+# SQL
 Here are my notes of SQL
