@@ -1,9 +1,16 @@
-# SQL Data Analysis -
-Title of the project - Rule-Based Incident Management(Complaince) and Analyst Efficacy
-Data Summary and Composition - The data analyzed in this project is from an operational dataset from a business involved in gaming, regulated activities. It comprises of column names like TICKET, RULENAME (e.g., Blacklist, Deposit Limits exceeded),STATUS, INCIDENTCOUNT, ANALYST (Handling the tickits). It focuses on tracking and managing incidents or events reported via a ticketing system across different geographic locations along with deatils of analyst query handling and managment.
+SQL DATA ANALYSIS
 
-  
-##Key Analysis & Queries Executed:
+# 📍 Title of the project - Rule-Based Incident Management(Complaince) and Analyst Efficacy
+
+---
+
+## 🧠 Overview
+
+**Data Summary and Composition** - The data analyzed in this project is from an operational dataset from a business involved in gaming, regulated activities. It comprises of column names like 'TICKET', 'RULENAME' (e.g., Blacklist, Deposit Limits exceeded),'STATUS', 'INCIDENTCOUNT', 'ANALYST' (Handling the tickits). It focuses on tracking and managing incidents or events reported via a ticketing system across different geographic locations along with deatils of analyst query handling and managment.
+
+---
+
+## 🎯Key Analysis & Queries Executed:
 
 ###Data Preparation: The initial steps involved loading the data, checking for duplicates (none found ), handling null values (minimal, primarily in ANALYST, NOTES, and SEARCH columns ), and converting the SUMMARYDATE column to datetime objects. Object type columns were stripped of whitespace and converted to uppercase.
 
