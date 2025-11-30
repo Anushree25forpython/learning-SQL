@@ -1,4 +1,4 @@
-**SQL DATA ANALYSIS**
+
 
 # 📍 Title of the project - Rule-Based Incident Management and Analyst Efficacy
 
