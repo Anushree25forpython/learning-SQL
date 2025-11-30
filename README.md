@@ -1,12 +1,12 @@
-SQL DATA ANALYSIS
+**SQL DATA ANALYSIS**
 
-# 📍 Title of the project - Rule-Based Incident Management(Complaince) and Analyst Efficacy
+# 📍 Title of the project - Rule-Based Incident Management and Analyst Efficacy
 
 ---
 
 ## 🧠 Overview
 
-**Data Summary and Composition** - The data analyzed in this project is from an operational dataset from a business involved in gaming, regulated activities. It comprises of column names like 'TICKET', 'RULENAME' (e.g., Blacklist, Deposit Limits exceeded),'STATUS', 'INCIDENTCOUNT', 'ANALYST' (Handling the tickits). It focuses on tracking and managing incidents or events reported via a ticketing system across different geographic locations along with deatils of analyst query handling and managment.
+**Data Summary and Composition** - The data analyzed in this project is from an operational dataset from a business involved in gaming, regulated activities. It comprises of column names like 'TICKET', 'RULENAME' (e.g., Blacklist, Deposit Limits exceeded), 'STATUS', 'INCIDENTCOUNT', 'ANALYST' (Handling the tickits). It focuses on tracking and managing incidents or events reported via a ticketing system across different geographic locations along with deatils of analyst query handling and managment.
 
 ---
 
@@ -14,17 +14,17 @@ SQL DATA ANALYSIS
 
 ###Data Preparation: The initial steps involved loading the data, checking for duplicates (none found ), handling null values (minimal, primarily in ANALYST, NOTES, and SEARCH columns ), and converting the SUMMARYDATE column to datetime objects. Object type columns were stripped of whitespace and converted to uppercase.
 
-Text Analysis:
+## 📝Text Analysis:
 Counted the occurrences of the word "Blacklist" in the NOTES column (result: 221).
 Found the latest SUMMARYDATE in which the word "Italian" appears in the NOTES column (result: 2024-01-15).
 
-Geographic & Rule Analysis:
+## ⚖️Geographic & Rule Analysis:
 Produced a pivot table showing the count of RULENAME by COUNTRY. The top countries by count were ONTARIO (689), DENMARK (583), and SPAIN (514).
 Calculated the time difference in days between the first and last entry for each RULENAME within each COUNTRY using the SQLite julianday() function.
 Identified RULENAMEs that do not appear in all countries (i.e., less than the total count of distinct countries).
 Identified RULENAMEs that appear in only one country (Count of distinct country =1) .
 
-Time-Series & Incident Analysis:
+## Time-Series & Incident Analysis:
 Calculated the Rolling Count of Incidents (Rolling_incident_count) by summing INCIDENTCOUNT partitioned by COUNTRY and RULENAME and ordered by SUMMARYDATE .
 
 Analyst Efficiency:
